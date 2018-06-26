@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import { HashRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './redux/store';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
+import "./index.css";
+import store from "./redux/store";
+import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
-
-    <Provider>
-        <HashRouter>
-            <App />
-        </HashRouter>
-    </Provider>
-    , document.getElementById('root'));
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
+  document.getElementById("root")
+);
 registerServiceWorker();

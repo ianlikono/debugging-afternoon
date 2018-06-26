@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../../images/dev-mountain-logo.png';
 import './NavBar.css';
-import Logo from '../../images/dev-mountain-logo.png'
 
 class NavBar extends Component {
 
